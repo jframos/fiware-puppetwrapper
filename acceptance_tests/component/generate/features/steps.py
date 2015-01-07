@@ -72,7 +72,7 @@ def assert_install_uninstall(step):
                                        software_to_generate_list=world.software_to_generate)
 
 
-@step(u'I uninstall the software "([^"]*)" with version "([^"]*)"')
+@step(u'I uninstall the software "([^"]*)" with version "([^"]*)"$')
 def uninstall_software(step, software_name, version):
 
     model_install_request = install_simple_model(version, world.group, software_name)
